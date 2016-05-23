@@ -8,19 +8,19 @@ window.onresize=function(){
 };
 var oUl=document.getElementById("ul1");
 var l=0;
+var rem=parseFloat(document.documentElement.style.fontSize);
 oUl.addEventListener('touchstart',function(ev){	
-		disX=ev.targetTouches[0].pageX-oUl.offsetLeft/2/100;
+		var disX=(ev.targetTouches[0].pageX-oUl.offsetLeft)/rem;
 		document.addEventListener('touchmove',move,false)
 		ev.preventDefault();
 	function move(ev){
-		l=(ev.targetTouches[0].pageX-disX)/2/100;
-			console.log(l)
+		l=ev.targetTouches[0].pageX/rem-disX;
 		if(l>0){
 			l=0;
 		}else if(l<-2.2){
 			l=-2.2
 		}
-		oUl.style.left=l+'rem';
+		oUl.style.webkitTransform='translate('+l+'rem,0)';
 		document.addEventListener('touchend',end,false)
 	}
 	function end(){
