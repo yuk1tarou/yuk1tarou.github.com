@@ -12,8 +12,6 @@ function move(ev){
 		console.log(l)
 	if(l>0){
 		l=0;
-	}else if(l<-oUl.offsetWidth/20/100){
-		l=-oUl.offsetWidth/20/100;
 	}
 	oUl.style.left=l+'rem';
 	document.addEventListener('touchend',end,false)
