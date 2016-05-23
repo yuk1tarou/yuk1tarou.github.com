@@ -7,7 +7,8 @@
 .content li a img{width:1.155rem;height:0.655rem;}
 .content a p{font-size:0.13rem;line-height;margin-left:0.105rem;}
 .content a{float:left;margin-top:0.1rem;}
+.content .content_z{margin-top:0.11rem;}
 .content .p_g{margin-top:0.05rem;}
 .content div{float:left;margin-top:0.07rem;font-size:0.115rem;line-height:0.16rem;margin-left:0.105rem;}
-.sc{color:#bebebe;background:url('../images/3.png') 0 0 no-repeat;padding-left:0.20rem;display:block;height:0.2rem;}
+.sc{color:#bebebe;background:url('../images/3.png') 0 0 no-repeat;padding-left:0.23rem;display:block;height:0.22rem;line-height:0.22rem;}
 .mf{font-size:0.11rem;color:#369aff;}
