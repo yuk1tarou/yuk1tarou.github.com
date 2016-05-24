@@ -7,4 +7,6 @@
 .banner a img{width:100%;height:100%;}
 .sc{color:#bebebe;background:url('../images/3.png') 0 0 no-repeat;padding-left:0.20rem;display:block;height:0.2rem;}
 .mf{font-size:0.11rem;color:#369aff;}
-.content{width:3rem;margin:0 auto;background:red;}
+.content{width:3rem;margin:0 auto;background:red;height:10rem;}
+.con_left{}
+.con_right{}
