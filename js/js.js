@@ -15,13 +15,13 @@ window.onresize=function(){
 		document.addEventListener('touchmove',move,false);
 		ev.preventDefault();
 		function move(ev){
-		if(l>0){
-			l=0;
-		}else if(l<-2.2){
-			l=-2.2;
-		}
 			console.log(l)
 			l=ev.targetTouches[0].pageX/rem-disX;
+		if(l>0){
+			l=0;
+		}else if(l<-2.7){
+			l=-2.7;
+		}
 			oUl.style.webkitTransform='translate('+l+'rem,0)';
 		}
 		function end(){
